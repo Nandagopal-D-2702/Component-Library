@@ -1,0 +1,38 @@
+
+
+.btn{
+    font-family: 'Segoe UI', sans-serif;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.btn:disabled{
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+/* Primary Button */
+.btn.primary{
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #fff;
+}
+
+.btn.primary:hover{
+    background: linear-gradient(to right, #5d0eb6, #1f63d9);
+}
+
+/* Secondary Button */
+.btn.secondary{
+    background: linear-gradient(to right, #ff512f, #dd2476);
+    color: #fff;
+}
+
+.btn.secondary:hover{
+    background: linear-gradient(to right, #e64525, #c7205e);
+}

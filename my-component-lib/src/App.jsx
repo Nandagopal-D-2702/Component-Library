@@ -1,7 +1,9 @@
+import Button from "./components/Button/Button";
+
 function App() {
   return (
     <div>
-      <h1>My Component Library</h1>
+      <Button />
     </div>
   );
 }

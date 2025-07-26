@@ -1,0 +1,7 @@
+| Step | Task                          | Outcome                                   |
+| ---- | ----------------------------- | ----------------------------------------- |
+| 1    | Create Button folder & files  | Component module scaffolded               |
+| 2    | Write `Button.jsx` with props | Logic + reusability                       |
+| 3    | Write `Button.css`            | Aesthetic styling                         |
+| 4    | Write `Button.test.jsx`       | Ensure click functionality                |
+| 5    | Export it via `index.js`      | Make it usable in other parts of your app |
