@@ -1,7 +1,64 @@
-| Step | Task                          | Outcome                                   |
-| ---- | ----------------------------- | ----------------------------------------- |
-| 1    | Create Button folder & files  | Component module scaffolded               |
-| 2    | Write `Button.jsx` with props | Logic + reusability                       |
-| 3    | Write `Button.css`            | Aesthetic styling                         |
-| 4    | Write `Button.test.jsx`       | Ensure click functionality                |
-| 5    | Export it via `index.js`      | Make it usable in other parts of your app |
+────────────────────────────────────────────
+📘 COMPONENT DOCUMENTATION – Button_1 & Button_2
+────────────────────────────────────────────
+
+📂 Component Path:
+src/components/Button_1/Button_1.jsx
+
+────────────────────────────────────────────
+🧩 Component Purpose:
+Reusable <Button /> components with aesthetic gradient designs and customizable props.
+Designed to be used across multiple UI modules and pages.
+
+────────────────────────────────────────────
+🧪 Components:
+1. Button_1 – Primary gradient button (blue/purple)
+2. Button_2 – Secondary gradient button (orange/pink)
+
+────────────────────────────────────────────
+🔧 Props:
+- label (string)         ✅ Text to be displayed inside the button (default: 'Gradient Button')
+- onClick (function)     ✅ Function triggered on button click
+- variant (string)       ✅ Defines style variant: 'primary' or 'secondary'
+- disabled (boolean)     ✅ Disables the button when true
+
+────────────────────────────────────────────
+🎨 Styling Classes (from Button_1.css):
+- .btn                   → Base styling for all buttons
+- .primary               → Gradient styling for Button_1
+- .secondary             → Gradient styling for Button_2
+- .btn:disabled          → Styling for disabled state
+
+────────────────────────────────────────────
+✅ Example Usage:
+
+<Button_1
+  label="Submit"
+  variant="primary"
+  onClick={() => console.log('Submitted')}
+  disabled={false}
+/>
+
+<Button_2
+  label="Cancel"
+  variant="secondary"
+  onClick={() => alert('Cancelled')}
+  disabled={false}
+/>
+
+────────────────────────────────────────────
+🧪 Tests Included (Button_1.test.jsx):
+✔ Renders with correct label
+✔ Executes click handler
+
+────────────────────────────────────────────
+🧠 Notes:
+- Button_1 and Button_2 share the same JSX logic but differ in default `variant`
+- CSS gradients used for aesthetic appeal
+- Button components are intentionally dumb — no business logic inside
+- Component designed to be scalable across a design system
+
+────────────────────────────────────────────
+📌 Authored by: Nandagopal D
+────────────────────────────────────────────
+
