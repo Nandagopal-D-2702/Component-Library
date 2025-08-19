@@ -4,6 +4,8 @@ function App() {
   return (
     <div>
       <GlassButton initialLabel="Nandagopal" clickedLabel="Frontend Developer"/>
+      <GlassButton initialLabel="Submit" clickedLabel="Submitted"/>
+      <GlassButton initialLabel="Get Started" clickedLabel="Started"/>
     </div>
   );
 }

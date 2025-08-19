@@ -1,0 +1,79 @@
+==================================================
+Component Documentation: GlassButton
+==================================================
+
+1. Component Overview
+---------------------
+The GlassButton is a reusable UI component designed with
+a glassmorphism style. It provides an aesthetic, modern
+look with blur effects, transparency, and dynamic state
+management for user interactions.
+
+Use Cases:
+- Landing pages or dashboards with modern UI
+- Call-to-action buttons
+- Interactive elements that require visual feedback
+
+--------------------------------------------------
+
+2. File Structure
+-----------------
+/GlassButton
+   ├── GlassButton.jsx        # Component logic
+   ├── GlassButton.css        # Styles (glassmorphism)
+   ├── GlassButton.test.jsx   # Unit tests
+   └── index.js               # Export entry point
+
+--------------------------------------------------
+
+3. Props
+--------
+| Prop Name     | Type    | Default Value  | Description                                   |
+|---------------|---------|----------------|-----------------------------------------------|
+| initialLabel  | string  | "Click Me"     | Text shown before button is clicked           |
+| clickedLabel  | string  | "Clicked!"     | Text shown after button is clicked            |
+| variant       | string  | "glass"        | Style variant (currently supports 'glass')    |
+| disabled      | boolean | false          | Disables interaction when set to true         |
+
+--------------------------------------------------
+
+4. Behavior
+-----------
+- When rendered, the button shows the `initialLabel`.
+- On first click, the label changes to `clickedLabel`.
+- Further clicks do not change the label again (one-time state change).
+- If `disabled` is true, the button cannot be clicked.
+
+--------------------------------------------------
+
+5. Styling (Glassmorphism)
+--------------------------
+- Transparent background with blur using `backdrop-filter`
+- Subtle border and shadow for depth
+- Smooth hover transitions
+- Works best on darker backgrounds
+
+CSS properties used:
+- background: rgba(...)
+- backdrop-filter: blur(8px)
+- border: 1px solid rgba(...)
+- box-shadow for depth
+
+--------------------------------------------------
+
+6. Test Cases
+-------------
+1. Renders with initial label
+2. Changes label on click
+3. Disables interaction if 'disabled' is true
+
+--------------------------------------------------
+
+7. Future Enhancements
+----------------------
+- Add prop to reset button state
+- Support for left/right icons
+- Add loading spinner state
+- Add multiple style variants (glass, neon, outline)
+
+==================================================
