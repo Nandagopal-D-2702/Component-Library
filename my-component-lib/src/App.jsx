@@ -1,11 +1,9 @@
-import { Button_1 } from "./components/Button_1/Button_1";
-import { Button_2 } from "./components/Button_1/Button_1";
+import GlassButton from "./components/Button_2/Button_2";
 
 function App() {
   return (
     <div>
-      <Button_1 />
-      <Button_2 />
+      <GlassButton initialLabel="Nandagopal" clickedLabel="Frontend Developer"/>
     </div>
   );
 }
